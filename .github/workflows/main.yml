@@ -14,11 +14,12 @@ jobs:
       - name: setup
         run:  |
           pip install pyinstaller      
-          pyinstaller -F path/to/artifact/medicomtoy_proxy.py
+          pyinstaller -F medicomtoy_proxy.py
+          echo %cd%
       - uses: actions/upload-artifact@v1
         with:
           name: my-artifact
-          path: path/to/artifact
+          path: /
 
 
   # lint:
