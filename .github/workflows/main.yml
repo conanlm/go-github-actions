@@ -11,8 +11,9 @@ jobs:
     steps:
       - name: Check out code
         uses: actions/checkout@v1
+      - name: setup
         run:  |
-          pip install pyinstaller
+          pip install pyinstaller      
           pyinstaller -F medicomtoy_proxy.py
 
 
