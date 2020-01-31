@@ -14,7 +14,8 @@ jobs:
       - name: setup
         run:  |
           pip install pyinstaller  
-          pip install -r requirements.txt    
+          pip install PyYAML  
+          pip install selenium  
           pyinstaller -F medicomtoy_firefox.py
           echo %cd%
       - uses: actions/upload-artifact@v1
