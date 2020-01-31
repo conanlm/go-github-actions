@@ -14,12 +14,11 @@ jobs:
       - name: setup
         run: |
           pip install pyinstaller
-          pip install PyYAML
           pyinstaller -F medicomtoy_firefox.py
       - uses: actions/upload-artifact@v1
         with:
           name: my-artifact
-          path: D:/a/go-github-actions/go-github-actions
+          path: D:/a/go-github-actions/go-github-actions/dist
   # lint:
   #   name: Lint
   #   runs-on: ubuntu-latest
