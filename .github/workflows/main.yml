@@ -14,7 +14,7 @@ jobs:
       - name: setup
         run:  |
           pip install pyinstaller      
-          pyinstaller -F medicomtoy_firefox.py.py
+          pyinstaller -F medicomtoy_firefox.py
           echo %cd%
       - uses: actions/upload-artifact@v1
         with:
