@@ -1,5 +1,5 @@
 
-lxml==4.4.2
+lxml==4.6.3
 pywin32==227
 PyYAML==5.3
 selenium==3.141.0
